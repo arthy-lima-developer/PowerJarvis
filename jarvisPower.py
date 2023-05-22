@@ -48,6 +48,7 @@ class PowershellAssistant:
             command = command.split('```')[0]
         elif '```' in command:
             command = command.split('```')[1]
+            command = command.split('```')[0]
         return command
 
 def main():
