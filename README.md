@@ -21,10 +21,16 @@ The output (or any error) will be shown in the same PowerShell window.
 To stop the assistant, simply type exit.
 # Examples
 User Input: "create a directory named dog"
-AI Output: New-Item -ItemType Directory -Force -Path dog
+AI Output: 
+```powershell
+New-Item -ItemType Directory -Force -Path dog
+```
 
 User Input: "open firefox"
-AI Output: Start-Process firefox
+AI Output: 
+```powershell
+Start-Process firefox
+```
 
 User Input: "create a .txt file with a summary of Independence Day"
 AI Output:
