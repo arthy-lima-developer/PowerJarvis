@@ -14,7 +14,7 @@ class PowershellAssistant:
         """Generates a PowerShell command using GPT-3."""
         path = os.path.abspath(__file__)
         response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo", #change to gpt-4 if you have access but it will cost you more and is very slow but more accurate
+            model="gpt-3.5-turbo", #The model is set to GPT-3.5-turbo by default for its balance between speed and accuracy. If you have access to GPT-4 and prefer more accurate results over speed, feel free to switch, but be aware that it will increase processing time and costs.
             messages=[
                 {
                     "role": "system", 
