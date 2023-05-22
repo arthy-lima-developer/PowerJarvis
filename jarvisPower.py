@@ -5,7 +5,7 @@ import os
 class PowershellAssistant:
     """A class representing an assistant that translates natural language into PowerShell commands."""
     
-    OPENAI_API_KEY = 'YOUR_OPENAI_KEY'  # Set your OpenAI API key here
+    OPENAI_API_KEY = 'YOUR_OPENAI_API_KEY'  # Set your OpenAI API key here
 
     def __init__(self):
         openai.api_key = self.OPENAI_API_KEY
@@ -23,6 +23,7 @@ class PowershellAssistant:
                 {"role": "user", "content": f"Context where command is running:{path} Command:{input}"}
             ]
         )
+        print('RESPONSE', response['choices'][0]['message']['content'])
         return response['choices'][0]['message']['content']
 
     @staticmethod
@@ -45,6 +46,8 @@ class PowershellAssistant:
         if '```powershell' in command:
             command = command.split('```powershell')[1]
             command = command.split('```')[0]
+        elif '```' in command:
+            command = command.split('```')[1]
         return command
 
 def main():
