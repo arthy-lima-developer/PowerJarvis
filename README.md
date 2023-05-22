@@ -1,6 +1,6 @@
 # PowerJarvis
 # Description
-The PowerShell Assistant, PowerJarvis,  is an AI-powered tool that allows users to interact with Windows PowerShell via natural language commands. Rather than memorizing intricate commands and syntax, users can simply tell the PowerShell Assistant what they want to do and the AI will translate that into the corresponding PowerShell command.
+The PowerShell Assistant: "PowerJarvis" is an AI-powered tool that allows users to interact with Windows PowerShell via natural language commands. Rather than memorizing intricate commands and syntax, users can simply tell the PowerShell Assistant what they want to do and the AI will translate that into the corresponding PowerShell command.
 
 This project uses OpenAI's GPT-3.5-turbo model by default, which is capable of understanding complex instructions and generating accurate responses. If you have access, you can opt to use GPT-4 for improved accuracy, albeit with slower processing times.
 
