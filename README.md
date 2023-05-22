@@ -19,13 +19,16 @@ AI Output:
 Start-Process firefox
 ```
 
-User Input: "create a .txt file with a summary of Independence Day"
+User Input: "create content for summary for independence day and write it to a file called summary_of_independence_day.txt on my desktop then open it"
 AI Output:
 
 ```powershell
 @"
-Independence Day is annually celebrated on July 4 and is often known as 'the Fourth of July'. It is the anniversary of the publication of the declaration of independence from Great Britain in 1776.
-"@ | Out-File -FilePath 'summary_of_independence_day.txt'
+New-Item -ItemType Directory -Force $Env:USERPROFILE\Desktop\summary
+Set-Content -Path $Env:USERPROFILE\Desktop\summary\summary_of_independence_day.txt -Value "On July 4, 1776, the thirteen colonies claimed their independence from England, an event which eventually led to the 
+formation of the United States."
+Start-Process $Env:USERPROFILE\Desktop\summary\summary_of_independence_day.txt
+"@
 ```
 # License
 This project is licensed under the terms of the MIT license.
