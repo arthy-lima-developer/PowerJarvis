@@ -6,19 +6,6 @@ This project uses OpenAI's GPT-3.5-turbo model by default, which is capable of u
 
 The PowerShell Assistant encapsulates the communication with the AI model and handles executing the generated commands on PowerShell, making it ideal for both novice and experienced PowerShell users seeking an intuitive and efficient way to perform tasks.
 
-# Features
-Natural Language Processing: Understands commands given in simple, natural language.
-PowerShell Command Execution: Executes translated commands directly on PowerShell.
-Error Handling: Handles and reports errors during command execution.
-Continuous Interaction: Provides a seamless user experience by allowing continuous command input.
-How to Use
-Ensure your environment is set up with OpenAI's Python library.
-Clone this repository.
-Run powershell_assistant.py in a PowerShell window.
-Enter a command in natural language (e.g., "create a directory named dog").
-The PowerShell Assistant will translate this command into a PowerShell command, display it, and then execute it.
-The output (or any error) will be shown in the same PowerShell window.
-To stop the assistant, simply type exit.
 # Examples
 User Input: "create a directory named dog"
 AI Output: 
