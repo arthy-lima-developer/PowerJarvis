@@ -30,7 +30,6 @@ User Input: "create a .txt file with a summary of Independence Day"
 AI Output:
 
 ```powershell
-Copy code
 @"
 Independence Day is annually celebrated on July 4 and is often known as 'the Fourth of July'. It is the anniversary of the publication of the declaration of independence from Great Britain in 1776.
 "@ | Out-File -FilePath 'summary_of_independence_day.txt'
