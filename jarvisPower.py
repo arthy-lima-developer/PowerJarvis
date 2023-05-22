@@ -23,7 +23,6 @@ class PowershellAssistant:
                 {"role": "user", "content": f"Context where command is running:{path} Command:{input}"}
             ]
         )
-        print('RESPONSE', response['choices'][0]['message']['content'])
         return response['choices'][0]['message']['content']
 
     @staticmethod
